@@ -12,7 +12,9 @@ fi
 
 # ubuntu/debian based distributions
 if [ -x /usr/bin/apt-get ]; then
-	apt-get install wine-stable python-qt4-phonon python-qt4
+        dpkg --add-architecture i386
+	apt-get update
+	apt-get install wine32 wine-stable python-qt4-phonon python-qt4
 	exit $?
 fi
 
