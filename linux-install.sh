@@ -14,6 +14,7 @@ fi
 if [ -x /usr/bin/apt-get ]; then
       	apt-get update
 	apt-get install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings i3 wicd ubuntu-drivers-common mesa-utils mesa-utils-extra compton xorg xserver-xorg nautilus gnome-terminal wine-stable python-qt4-phonon python-qt4 -y
+	reboot
 	exit $?
 fi
 
