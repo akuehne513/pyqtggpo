@@ -14,7 +14,7 @@ fi
 if [ -x /usr/bin/apt-get ]; then
         dpkg --add-architecture i386
 	apt-get update
-	apt-get install wine32 wine-stable python-qt4-phonon python-qt4 xorg gnome-core gnome-system-tools gnome-app-install
+	apt-get install wine python-qt4-phonon python-qt4 xorg gnome-core gnome-system-tools gnome-app-install
 	exit $?
 fi
 
